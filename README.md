@@ -23,20 +23,18 @@ Every lesson follows the same structure:
 
 ## Lessons Overview
 
-| # | Vulnerability | AWS Service(s) | 
-|---|--------------|---------------|---------|
-| [1](lessons/lesson-01-event-injection/) | Event Injection (Insecure Deserialization) | Lambda | 
+| # | Vulnerability | AWS Service(s) |
+|---|--------------|---------------|
+| [1](lessons/lesson-01-event-injection/) | Event Injection (Insecure Deserialization) | Lambda |
 | [2](lessons/lesson-02-broken-authentication/) | Broken Authentication (JWT not verified) | Lambda, Cognito |
 | [3](lessons/lesson-03-sensitive-info-disclosure/) | Sensitive Information Disclosure | Lambda, S3 |
-| [4](lessons/lesson-04-insecure-cloud-config/) | Insecure Cloud Configuration | S3, Lambda | 
+| [4](lessons/lesson-04-insecure-cloud-config/) | Insecure Cloud Configuration | S3, Lambda |
 | [5](lessons/lesson-05-broken-access-control/) | Broken Access Control (client-supplied privilege) | Lambda, DynamoDB |
-| [6](lessons/lesson-06-denial-of-service/) | Denial of Service (no rate limiting) | API Gateway, Lambda | 
+| [6](lessons/lesson-06-denial-of-service/) | Denial of Service (no rate limiting) | API Gateway, Lambda |
 | [7](lessons/lesson-07-over-privileged-function/) | Over-Privileged Function (IAM) | Lambda, IAM, S3, DynamoDB |
-| [8](lessons/lesson-08-logic-vulnerability/) | Logic Vulnerability (race condition) | Lambda, DynamoDB | 
-| [9](lessons/lesson-09-vulnerable-dependencies/) | Vulnerable Dependencies (node-serialize) | Lambda | 
-| [10](lessons/lesson-10-unhandled-exceptions/) | Unhandled Exceptions (stack trace leak) | Lambda, API Gateway | 
-
----
+| [8](lessons/lesson-08-logic-vulnerability/) | Logic Vulnerability (race condition) | Lambda, DynamoDB |
+| [9](lessons/lesson-09-vulnerable-dependencies/) | Vulnerable Dependencies (node-serialize) | Lambda |
+| [10](lessons/lesson-10-unhandled-exceptions/) | Unhandled Exceptions (stack trace leak) | Lambda, API Gateway |
 
 ## Prerequisites
 
