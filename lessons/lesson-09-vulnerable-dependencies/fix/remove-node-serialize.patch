@@ -1,0 +1,15 @@
+--- a/order-manager.js
++++ b/order-manager.js
+@@ -1,6 +1,5 @@
+-const serialize = require('node-serialize');
+-// ^ REMOVED: node-serialize calls eval() on _$$ND_FUNC$$_ values.
+-// ^ It is inherently unsafe for use on untrusted input.
+-// ^ Remove it from package.json as well (npm uninstall node-serialize).
++// node-serialize removed — was used on untrusted input, enabling RCE via
++// the _$$ND_FUNC$$_ IIFE execution mechanism. Use JSON.parse() instead.
+
+ exports.handler = async (event, context) => {
+-    var req     = serialize.unserialize(event.body);
+-    var headers = serialize.unserialize(event.headers);
++    var req     = JSON.parse(event.body);
++    var headers = event.headers;

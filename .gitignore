@@ -1,0 +1,28 @@
+# Secrets — never commit these
+*.env
+.env*
+loot.txt
+credentials
+
+# Screenshots (large binaries — commit manually or use Git LFS)
+# To track them: git add -f lessons/*/screenshots/*.png
+lessons/*/screenshots/*.png
+lessons/*/screenshots/*.jpg
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Node
+node_modules/
+package-lock.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Report PDF (large binary — add manually if needed)
+*.pdf

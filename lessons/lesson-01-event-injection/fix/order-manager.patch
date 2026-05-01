@@ -1,0 +1,16 @@
+--- a/order-manager.js
++++ b/order-manager.js
+@@ -1,8 +1,9 @@
+-const serialize = require('node-serialize');   // REMOVED in Lesson #9
++// node-serialize removed — was used on untrusted input, enabling RCE via _$$ND_FUNC$$_ IIFE execution
+
+ exports.handler = async (event, context) => {
+-    var req     = serialize.unserialize(event.body);    // VULNERABLE: eval() on user input
+-    var headers = serialize.unserialize(event.headers); // VULNERABLE
++    var req     = JSON.parse(event.body);   // SAFE: produces plain data, never evaluates code
++    var headers = event.headers;            // SAFE: API Gateway provides headers as a plain object
+
++    // Allowlist check on action field — reject unexpected values before processing
+     const ALLOWED_ACTIONS = ['orders', 'get', 'new', 'update', 'billing', 'complete', 'upload'];
+     if (!ALLOWED_ACTIONS.includes(req.action)) {
+         return { statusCode: 400, body: JSON.stringify({ message: 'Invalid action' }) };
