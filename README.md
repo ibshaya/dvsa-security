@@ -94,4 +94,4 @@ All exploits in this repository target an intentionally vulnerable application d
 
 ## Report
 
-The full written report is available as `ICS344_Report.pdf` (not committed — add your own copy).
+The full written report is available as `ICS344_Report.pdf` in docs.
