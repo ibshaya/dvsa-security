@@ -119,19 +119,7 @@ fetch("...", {
 
 Response: `{"status":"ok","order-id":"...","new-status":"paid"}` — checkout bypassed.
 
----
 
-## Evidence
-
-Screenshots to place in `screenshots/`:
-- `5.1-dvsa-signin.png` — signing in as non-admin user
-- `5.2-cart-page.png` — normal checkout flow requiring payment
-- `5.3-stack-trace-leak.png` — stack trace from isAdmin:false (boolean)
-- `5.4-exploit-fetch.png` — DevTools console sending isAdmin:"true"
-- `5.5-victim-order-returned.png` — victim's order returned to non-admin
-- `5.6-post-fix-rejected.png` — exploit returns "order not found" after fix
-
----
 
 ## Fix
 
