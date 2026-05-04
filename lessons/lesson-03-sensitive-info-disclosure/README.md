@@ -76,17 +76,7 @@ Find the `RECEIPT_RESULT:` line and copy the `download_url` value.
 Paste the `download_url` into your browser. A zip file downloads containing all order receipts
 in the `2026/04/` path.
 
----
 
-## Evidence
-
-Screenshots to place in `screenshots/`:
-- `3.1-curl-command.png` — malicious payload sent as a regular POST /order
-- `3.2-cloudwatch-receipt-result.png` — CloudWatch showing the signed S3 URL
-- `3.3-downloaded-zip.png` — zip archive with both users' receipt files
-- `3.4-post-fix-cloudwatch.png` — clean CloudWatch log after fix
-
----
 
 ## Fix
 
