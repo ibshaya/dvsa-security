@@ -62,16 +62,6 @@ wait
 
 Multiple `Internal server error` responses in the terminal confirm the backend is overwhelmed.
 
----
-
-## Evidence
-
-Screenshots to place in `screenshots/`:
-- `6.1-normal-billing-request.png` — single billing request captured in DevTools
-- `6.2-dos-terminal-output.png` — terminal showing multiple 500/502 responses
-- `6.3-api-gateway-throttling-config.png` — throttling settings applied as fix
-
----
 
 ## Fix
 
