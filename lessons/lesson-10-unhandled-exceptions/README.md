@@ -102,19 +102,8 @@ Run the exploit script for multiple variations:
 node exploit/trigger_leak.js
 ```
 
----
 
-## Evidence
 
-Screenshots to place in `screenshots/`:
-- `10.1-baseline-clean-response.png` — well-formed request returns clean JSON
-- `10.2-unknown-action-clean-error.png` — "unknown action" is handled cleanly (no trace)
-- `10.3-stack-trace-leaked.png` — isAdmin:false causes 502 + full stack trace
-- `10.4-devtools-console-leak.png` — leak visible in browser DevTools
-- `10.5-reproducible-variant.png` — another malformed input produces same class of leak
-- `10.6-post-fix-generic-400.png` — after fix, malformed input returns generic "bad request"
-
----
 
 ## Fix
 
