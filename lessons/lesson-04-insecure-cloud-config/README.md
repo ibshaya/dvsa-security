@@ -93,20 +93,6 @@ aws s3 cp "s3://$BUCKET/loot.txt" /tmp/loot.txt && cat /tmp/loot.txt
 
 The file contains `AWS_SESSION_TOKEN`, `AWS_SECRET_ACCESS_KEY`, and other secrets.
 
----
-
-## Evidence
-
-Screenshots to place in `screenshots/`:
-- `4.1-upload-commands.png` — terminal showing successful malicious file upload
-- `4.2-cloudwatch-8253ms.png` — Lambda ran for 8 seconds (payload executing)
-- `4.3-loot-txt-in-s3.png` — loot.txt (2.6 KB) visible in bucket
-- `4.4-loot-txt-contents.png` — stolen credentials (redacted)
-- `4.5-is-safe-fix.png` — is_safe() with checks restored
-- `4.6-bucket-policy-fixed.png` — bucket policy restricted to account owner
-- `4.7-cloudwatch-1ms.png` — post-fix: Lambda completed in 1.84 ms
-
----
 
 ## Fix
 
