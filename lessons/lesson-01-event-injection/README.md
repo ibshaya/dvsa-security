@@ -79,16 +79,7 @@ FILE READ SUCCESS: You are reading the contents of my hacked file!
 The `Internal server error` HTTP response is expected — the injected code ran before the
 handler crashed.
 
----
 
-## Evidence
-
-Screenshots to place in `screenshots/`:
-- `1.1-curl-internal-server-error.png` — curl command and HTTP response
-- `1.2-cloudwatch-file-read-success.png` — CloudWatch log confirming code execution
-- `1.3-cloudwatch-post-fix.png` — CloudWatch log after fix (no FILE READ SUCCESS)
-
----
 
 ## Fix
 
