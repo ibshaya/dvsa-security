@@ -100,17 +100,7 @@ curl -s "$API" \
 
 Response includes User C's `name`, `address`, `phone`, and `email`.
 
----
 
-## Evidence
-
-Screenshots to place in `screenshots/`:
-- `2.1-baseline-user-b-orders.png` — User B's real token returns only User B's orders
-- `2.2-forged-token-user-c-orders.png` — Forged token returns User C's order list
-- `2.3-forged-token-user-c-full-details.png` — Forged token returns User C's full PII
-- `2.4-cloudformation-outputs.png` — DVSA deployed in us-east-1
-
----
 
 ## Fix
 
