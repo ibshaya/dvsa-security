@@ -18,7 +18,8 @@ and phone number.
 **Impact:** Any authenticated user can impersonate any other user and read their orders and PII.
 
 ---
-
+---
+---
 ## Root Cause
 
 ```js
