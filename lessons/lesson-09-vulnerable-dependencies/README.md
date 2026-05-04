@@ -52,17 +52,7 @@ Additional step to confirm the dependency is present:
 bash exploit/exploit.sh
 ```
 
----
 
-## Evidence
-
-Screenshots to place in `screenshots/`:
-- `9.1-node-serialize-import.png` — Lambda Code tab showing require('node-serialize') on line 1
-- `9.2-curl-response.png` — Internal server error response (code executed before crash)
-- `9.3-cloudwatch-file-read-success.png` — CloudWatch confirming code execution
-- `9.4-cloudwatch-post-fix.png` — No FILE READ SUCCESS after removing the dependency
-
----
 
 ## Fix
 
