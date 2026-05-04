@@ -79,21 +79,7 @@ See the screenshots in `screenshots/` for evidence.
 3. **IAM → the receipt role → Generate policy** → select the trail → last 1 day → Generate.
 4. Review the output: only 3 actions appear. Compare to dozens granted.
 
----
 
-## Evidence
-
-Screenshots to place in `screenshots/`:
-- `7.1-role-5-policies.png` — IAM role showing 5 attached policies
-- `7.2-s3-wildcard-policy.png` — SendReceiptFunctionRolePolicy1 with arn:aws:s3:::*
-- `7.3-policy-simulator-s3.png` — Simulator: S3 GetObject/PutObject ALLOWED on any bucket
-- `7.4-policy-simulator-dynamodb.png` — Simulator: DynamoDB Scan ALLOWED on any table
-- `7.5-cloudtrail-generated-policy.png` — Only 3 actions actually used
-- `7.6-s3-policy-fixed.png` — Receipts bucket only after fix
-- `7.7-dynamodb-policy-fixed.png` — DVSA-ORDERS-DB only after fix
-- `7.8-policy-simulator-post-fix.png` — Denied on arbitrary bucket/table after fix
-
----
 
 ## Fix
 
